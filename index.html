@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Верный Полис — страхование онлайн</title>
+  <meta name="description" content="Верный Полис: ОСАГО, КАСКО, имущество, здоровье и бизнес. Онлайн расчет, прозрачные условия и поддержка 24/7." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="insurance-body">
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Верный Полис">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Верный Полис</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Навигация">
+        <a href="#products">Продукты</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#claims">Страховой случай</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+78002004411">8 (800) 200-44-11</a>
+        <a class="btn btn--outline" href="#claims">Сообщить о случае</a>
+        <a class="btn" href="#calc">Рассчитать</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Страхование онлайн для жизни и бизнеса</p>
+          <h1>Полис за 10 минут без очередей</h1>
+          <p class="hero__subtitle">
+            ОСАГО, КАСКО, имущество, здоровье и бизнес в одном месте. Сравните программы,
+            получите расчет и поддержку 24/7.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#calc">Получить расчет</a>
+            <a class="btn btn--ghost" href="#products">Выбрать продукт</a>
+          </div>
+
+          <ul class="hero__list">
+            <li>Электронный полис и проверка данных по базам</li>
+            <li>Гибкие опции: франшиза, ремонт, расширенная защита</li>
+            <li>Поддержка и урегулирование без лишней бюрократии</li>
+          </ul>
+
+          <div class="hero__stats">
+            <div class="stat-card">
+              <div class="stat-card__value">3,2 млн</div>
+              <div class="stat-card__label">клиентов по РФ</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">96%</div>
+              <div class="stat-card__label">заявок онлайн</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">24/7</div>
+              <div class="stat-card__label">служба поддержки</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__panel" id="calc">
+          <div class="panel__header">
+            <h2>Быстрый расчет</h2>
+            <p>Оставьте данные, мы подберем оптимальный тариф.</p>
+          </div>
+
+          <form class="calc-form" method="post" action="#">
+            <label>
+              <span>Тип страхования</span>
+              <select name="type" required>
+                <option value="" disabled selected>Выберите продукт</option>
+                <option>ОСАГО</option>
+                <option>КАСКО</option>
+                <option>Имущество</option>
+                <option>Здоровье и ДМС</option>
+                <option>Путешествия</option>
+                <option>Бизнес</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Регион</span>
+              <input type="text" name="region" placeholder="Москва" required />
+            </label>
+
+            <label>
+              <span>Дата начала</span>
+              <input type="date" name="start_date" required />
+            </label>
+
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+7 ___ ___-__-__" required />
+            </label>
+
+            <label class="form__full">
+              <span>Комментарий</span>
+              <textarea name="comment" rows="3" placeholder="Например: марка авто, срок, пожелания"></textarea>
+            </label>
+
+            <button class="btn btn--block" type="submit">Получить расчет</button>
+            <p class="form__note">Форма предназначена для подключения к CRM или почте.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <h2>Страховые продукты</h2>
+            <p>Подберем программу под ваш стиль жизни и бюджет.</p>
+          </div>
+          <a class="link-arrow" href="#calc">Рассчитать онлайн</a>
+        </div>
+
+        <div class="card-grid">
+          <article class="product-card">
+            <h3>ОСАГО</h3>
+            <p>Электронный полис с быстрым выпуском и проверкой по базе РСА.</p>
+            <ul>
+              <li>Онлайн оформление за 10 минут</li>
+              <li>Сравнение тарифов</li>
+              <li>Поддержка 24/7</li>
+            </ul>
+          </article>
+
+          <article class="product-card">
+            <h3>КАСКО</h3>
+            <p>Полная защита автомобиля с гибкими условиями и сервисом.</p>
+            <ul>
+              <li>Франшиза или без</li>
+              <li>Ремонт у дилера</li>
+              <li>Эвакуация и помощь на дороге</li>
+            </ul>
+          </article>
+
+          <article class="product-card">
+            <h3>Имущество</h3>
+            <p>Страхование квартиры, дома и ответственности перед соседями.</p>
+            <ul>
+              <li>Защита от пожара и затопления</li>
+              <li>Оценка ущерба онлайн</li>
+              <li>Выплата без экспертиз на старте</li>
+            </ul>
+          </article>
+
+          <article class="product-card">
+            <h3>Здоровье и ДМС</h3>
+            <p>Программы для семьи и сотрудников с быстрым доступом к врачам.</p>
+            <ul>
+              <li>Онлайн-консультации</li>
+              <li>Клиники-партнеры</li>
+              <li>Персональный координатор</li>
+            </ul>
+          </article>
+
+          <article class="product-card">
+            <h3>Путешествия</h3>
+            <p>Страхование поездок по России и миру с расширенной поддержкой.</p>
+            <ul>
+              <li>Медицинская помощь 24/7</li>
+              <li>Покрытие багажа</li>
+              <li>Сервисные партнеры за рубежом</li>
+            </ul>
+          </article>
+
+          <article class="product-card">
+            <h3>Бизнес</h3>
+            <p>Комплексная защита бизнеса: имущество, ответственность, персонал.</p>
+            <ul>
+              <li>Индивидуальный риск-профиль</li>
+              <li>Экспертная оценка</li>
+              <li>Сопровождение договоров</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="section section--alt">
+      <div class="container">
+        <h2>Почему выбирают нас</h2>
+        <p class="section__subtitle">Сосредоточены на скорости сервиса и прозрачности условий.</p>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Прозрачные условия</h3>
+            <p>Показываем полную стоимость, ограничения и порядок выплат еще до оформления.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Единая поддержка</h3>
+            <p>Один контактный центр для консультаций, изменений и урегулирования.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Цифровые сервисы</h3>
+            <p>Электронный полис, статус заявок и документы в личном кабинете.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Сильная партнерская сеть</h3>
+            <p>Клиники, СТО и сервисы в 120+ городах России.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <h2>Тарифные пакеты</h2>
+            <p>Сравните варианты и выберите удобный уровень защиты.</p>
+          </div>
+          <span class="tag">Популярный выбор</span>
+        </div>
+
+        <div class="plan-grid">
+          <article class="plan-card">
+            <h3>Базовый</h3>
+            <p class="plan-price">от 2 900 руб.</p>
+            <ul>
+              <li>Электронный полис</li>
+              <li>Онлайн поддержка</li>
+              <li>Стандартные риски</li>
+            </ul>
+            <a class="btn btn--outline" href="#calc">Выбрать</a>
+          </article>
+
+          <article class="plan-card plan-card--featured">
+            <div class="plan-badge">Лучший баланс</div>
+            <h3>Оптимальный</h3>
+            <p class="plan-price">от 4 900 руб.</p>
+            <ul>
+              <li>Расширенная защита</li>
+              <li>Персональный менеджер</li>
+              <li>Приоритет в урегулировании</li>
+            </ul>
+            <a class="btn" href="#calc">Выбрать</a>
+          </article>
+
+          <article class="plan-card">
+            <h3>Премиум</h3>
+            <p class="plan-price">от 7 900 руб.</p>
+            <ul>
+              <li>Максимальное покрытие</li>
+              <li>Сервис 24/7</li>
+              <li>Сопровождение юриста</li>
+            </ul>
+            <a class="btn btn--outline" href="#calc">Выбрать</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="claims" class="section section--alt">
+      <div class="container">
+        <h2>Как оформить страховой случай</h2>
+        <p class="section__subtitle">
+          Мы сопровождаем вас на каждом шаге и помогаем ускорить выплату или ремонт.
+        </p>
+
+        <ol class="steps">
+          <li>
+            <div class="step-number">1</div>
+            <div>
+              <h3>Свяжитесь с нами</h3>
+              <p>Позвоните на горячую линию или оставьте заявку через сайт.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">2</div>
+            <div>
+              <h3>Подготовьте документы</h3>
+              <p>Получите список документов и отправьте их в цифровом виде.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">3</div>
+            <div>
+              <h3>Оценка ущерба</h3>
+              <p>Эксперт проведет осмотр или онлайн-оценку.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">4</div>
+            <div>
+              <h3>Выплата или ремонт</h3>
+              <p>Получите выплату на счет или направление в сервис.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="claim-cta">
+          <div>
+            <h3>Нужна помощь прямо сейчас?</h3>
+            <p>Горячая линия работает круглосуточно, даже в выходные.</p>
+          </div>
+          <a class="btn btn--dark" href="tel:+78002004411">Позвонить 8 (800) 200-44-11</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Отзывы клиентов</h2>
+        <div class="review-grid">
+          <article class="review-card">
+            <p class="review-text">
+              "ОСАГО оформила за 8 минут, сразу получила электронный полис на почту."
+            </p>
+            <p class="review-author">Ирина П., Санкт-Петербург</p>
+          </article>
+          <article class="review-card">
+            <p class="review-text">
+              "После ДТП быстро связались, помогли собрать документы и направили на ремонт."
+            </p>
+            <p class="review-author">Максим Л., Казань</p>
+          </article>
+          <article class="review-card">
+            <p class="review-text">
+              "Оформляли ДМС для компании. Менеджер сопровождал на всех этапах."
+            </p>
+            <p class="review-author">Мария Р., Москва</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <h2>Частые вопросы</h2>
+        <div class="faq">
+          <details>
+            <summary>Какие документы нужны для оформления ОСАГО?</summary>
+            <p>Паспорт, водительское удостоверение, СТС или ПТС, данные собственника.</p>
+          </details>
+          <details>
+            <summary>Можно ли оплатить полис частями?</summary>
+            <p>Да, доступны программы рассрочки для КАСКО и ДМС при согласовании.</p>
+          </details>
+          <details>
+            <summary>Как быстро приходит электронный полис?</summary>
+            <p>После оплаты и проверки данных — обычно в течение 5-10 минут.</p>
+          </details>
+          <details>
+            <summary>Есть ли сервисы в моем городе?</summary>
+            <p>Мы работаем в 120+ городах. Уточните адреса в службе поддержки.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Контакты</h2>
+            <p class="muted">Мы на связи каждый день. Ответим на вопросы и поможем с оформлением.</p>
+
+            <ul class="contact-list">
+              <li><strong>Горячая линия:</strong> <a href="tel:+78002004411">8 (800) 200-44-11</a></li>
+              <li><strong>Продажи:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+              <li><strong>Email:</strong> <a href="mailto:info@verny-polis.ru">info@verny-polis.ru</a></li>
+              <li><strong>Адрес:</strong> Москва, ул. Садовая, 24</li>
+            </ul>
+
+            <div class="office-hours">
+              <div>
+                <span>Офис:</span>
+                <strong>Пн-Пт 09:00-19:00</strong>
+              </div>
+              <div>
+                <span>Урегулирование:</span>
+                <strong>Круглосуточно</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Задать вопрос</h3>
+            <form method="post" action="#">
+              <label>
+                <span>Ваше имя</span>
+                <input type="text" name="name" placeholder="Алексей" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="name@example.com" required />
+              </label>
+              <label>
+                <span>Сообщение</span>
+                <textarea name="message" rows="4" placeholder="Опишите ваш вопрос"></textarea>
+              </label>
+              <button class="btn btn--block" type="submit">Отправить</button>
+              <p class="form__note">Форма не отправляет данные без интеграции.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Верный Полис. Все права защищены.</p>
+      <div class="footer-links">
+        <a href="#products">Продукты</a>
+        <a href="#claims">Страховой случай</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
