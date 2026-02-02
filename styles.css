@@ -76,11 +76,8 @@ select {
 }
  
 .site-header {
-  position: sticky;
-  top: 0;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  position: relative;
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
   z-index: 100;
   transition: all 0.3s ease;
@@ -890,33 +887,77 @@ h1 {
   border-color: var(--primary);
 }
 
-.partner-logo img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.7;
+.partner-name {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text);
   transition: all 0.3s ease;
 }
 
-.partner-logo:hover img {
-  filter: grayscale(0%);
-  opacity: 1;
+/* Фирменные цвета партнеров */
+.partner-logo--sogaz {
+  background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+  border-color: #003366;
 }
 
-.partner-placeholder {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--muted);
-  text-align: center;
-  padding: 8px;
+.partner-logo--sogaz .partner-name {
+  color: #ffffff;
+}
+
+.partner-logo--ingosstrakh {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  border-color: #1e3a8a;
+}
+
+.partner-logo--ingosstrakh .partner-name {
+  color: #ffffff;
+}
+
+.partner-logo--reso {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  border-color: #059669;
+}
+
+.partner-logo--reso .partner-name {
+  color: #ffffff;
+}
+
+.partner-logo--rgs {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  border-color: #1e40af;
+}
+
+.partner-logo--rgs .partner-name {
+  color: #ffffff;
+}
+
+.partner-logo--alfastrah {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  border-color: #dc2626;
+}
+
+.partner-logo--alfastrah .partner-name {
+  color: #ffffff;
+}
+
+.partner-logo--vsk {
+  background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%);
+  border-color: #0ea5e9;
+}
+
+.partner-logo--vsk .partner-name {
+  color: #ffffff;
+}
+
+.partner-logo:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.partner-logo:hover .partner-name {
+  transform: scale(1.05);
 }
 
 .partners-note {
