@@ -112,7 +112,7 @@ select {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  min-height: 72px;
+  min-height: 100px;
 }
  
 .brand {
@@ -123,25 +123,32 @@ select {
 }
  
 .brand__logo-wrap {
-  width: 52px;
-  height: 52px;
-  padding: 6px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(192, 38, 45, 0.22);
-  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.18);
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.98);
+  border: 2px solid rgba(192, 38, 45, 0.3);
+  box-shadow: 0 16px 32px rgba(192, 38, 45, 0.25), 0 4px 12px rgba(15, 23, 42, 0.15);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand:hover .brand__logo-wrap {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(192, 38, 45, 0.3), 0 6px 16px rgba(15, 23, 42, 0.2);
 }
  
 .brand__logo-wrap::after {
   content: "";
   position: absolute;
-  inset: -4px;
-  border-radius: 16px;
-  border: 1px solid rgba(192, 38, 45, 0.22);
+  inset: -6px;
+  border-radius: 20px;
+  border: 2px solid rgba(192, 38, 45, 0.25);
+  opacity: 0.6;
 }
  
 .brand__logo {
@@ -153,7 +160,9 @@ select {
 }
  
 .brand__name {
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
  
 .site-nav {
@@ -333,7 +342,35 @@ select {
   position: relative;
   z-index: 1;
 }
- 
+
+.hero__logo {
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.hero__logo-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 12px 24px rgba(192, 38, 45, 0.3));
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.hero__logo-img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
 .eyebrow {
   display: inline-block;
   padding: 6px 14px;
@@ -912,7 +949,25 @@ h1 {
   .hero {
     padding: 64px 0 48px;
   }
- 
+
+  .hero__logo-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .brand__logo-wrap {
+    width: 64px;
+    height: 64px;
+  }
+
+  .brand__name {
+    font-size: 18px;
+  }
+
+  .header__inner {
+    min-height: 80px;
+  }
+
   .hero__stats {
     grid-template-columns: 1fr;
   }
@@ -940,11 +995,29 @@ h1 {
 }
  
 @media (max-width: 520px) {
+  .hero__logo-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .brand__logo-wrap {
+    width: 56px;
+    height: 56px;
+  }
+
+  .brand__name {
+    font-size: 16px;
+  }
+
+  .header__inner {
+    min-height: 72px;
+  }
+
   .header__actions {
     width: 100%;
     justify-content: flex-start;
   }
- 
+
   .btn {
     width: 100%;
   }
