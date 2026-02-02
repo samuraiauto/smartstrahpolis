@@ -4,462 +4,180 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Умный Полис — страхование онлайн</title>
-  <meta name="description" content="Умный Полис: автострахование, недвижимость и все виды страхования. Онлайн расчет и поддержка без выходных." />
+  <meta name="description" content="Умный Полис: автострахование, недвижимость и другие виды страхования. Онлайн расчет и поддержка без выходных." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body class="insurance-body">
   <header class="site-header">
     <div class="container header__inner">
-      <a class="brand" href="#top" aria-label="Умный Полис">
+      <a class="brand" href="#top">
         <span class="brand__logo-wrap">
           <img class="brand__logo" src="logo.png" alt="Умный Полис">
         </span>
         <span class="brand__name">Умный Полис</span>
       </a>
- 
-      <nav class="site-nav" aria-label="Навигация">
+
+      <nav class="site-nav">
         <a href="#products">Продукты</a>
+        <a href="#partners">Партнёры</a>
         <a href="#benefits">Преимущества</a>
         <a href="#claims">Страховой случай</a>
         <a href="#faq">FAQ</a>
         <a href="#contacts">Контакты</a>
       </nav>
- 
+
       <div class="header__actions">
-        <a class="btn btn--ghost social-link header__phone" href="tel:+79289000087" aria-label="Позвонить">
-          <svg class="icon icon--phone" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <a class="btn btn--ghost social-link" href="tel:+79289000087">
+          <svg class="icon icon--phone" viewBox="0 0 24 24">
             <path d="M6.6 10.8c1.4 2.7 3.9 5.2 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1 .4 2.1.7 3.2.7.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.3 22 2 13.7 2 3c0-.6.4-1 1-1h3.9c.6 0 1 .4 1 1 0 1.1.2 2.2.7 3.2.1.4 0 .9-.2 1.2l-2.2 2.2z"/>
           </svg>
           Позвонить
         </a>
-        <a class="btn btn--ghost social-link" href="https://wa.me/79289000087" target="_blank" rel="noopener">
-          <svg class="icon icon--wa" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-            <path d="M16 3C9.4 3 4 8.1 4 14.4c0 2.5.8 4.8 2.2 6.8L4 29l7.9-2.1c1.9 1 4.1 1.6 6.4 1.6 6.6 0 12-5.1 12-11.4S22.6 3 16 3zm6.9 15.9c-.3.8-1.5 1.4-2.1 1.5-.6.1-1.3.1-2.1-.1-.5-.1-1.2-.4-2-.7-3.5-1.4-5.8-4.8-6-5-.2-.2-1.4-1.8-1.4-3.5 0-1.6.8-2.4 1.2-2.8.3-.3.8-.4 1.1-.4h.8c.3 0 .6 0 .9.6.3.7 1.1 2.6 1.2 2.8.1.2.1.5 0 .7-.1.2-.2.4-.4.6-.2.2-.4.4-.6.6-.2.2-.4.4-.2.7.1.3.6 1.2 1.3 1.9.9.9 1.6 1.2 1.9 1.3.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 2 .9 2.3 1 .3.1.5.2.6.3.1.1.1.7-.2 1.5z"/>
+
+        <a class="btn btn--ghost social-link" href="https://wa.me/79289000087" target="_blank">
+          <svg class="icon icon--wa" viewBox="0 0 32 32">
+            <path d="M16 3C9.4 3 4 8.1 4 14.4c0 2.5.8 4.8 2.2 6.8L4 29l7.9-2.1c1.9 1 4.1 1.6 6.4 1.6 6.6 0 12-5.1 12-11.4S22.6 3 16 3z"/>
           </svg>
           WhatsApp
         </a>
-        <a class="btn btn--ghost social-link" href="https://t.me/raviga22" target="_blank" rel="noopener">
-          <svg class="icon icon--tg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M9.04 15.47l-.39 5.54c.56 0 .8-.24 1.1-.52l2.64-2.52 5.48 4.01c1 .55 1.71.26 1.96-.92l3.55-16.6c.32-1.5-.54-2.09-1.51-1.72L1.13 9.37c-1.48.58-1.46 1.4-.25 1.77l5.6 1.75L18.94 5.4c.59-.39 1.12-.18.68.21L9.04 15.47z"/>
+
+        <a class="btn btn--ghost social-link" href="https://t.me/raviga22" target="_blank">
+          <svg class="icon icon--tg" viewBox="0 0 24 24">
+            <path d="M9.04 15.47l-.39 5.54 2.64-2.52 5.48 4.01 3.55-16.6L1.13 9.37l5.6 1.75L18.94 5.4z"/>
           </svg>
           Telegram
         </a>
-        <a class="btn btn--outline" href="#claims">Сообщить о случае</a>
+
         <a class="btn" href="#calc">Рассчитать</a>
       </div>
     </div>
   </header>
- 
+
   <main id="top">
     <section class="hero">
       <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="eyebrow">Страхование для авто и недвижимости</p>
-          <h1>Умный полис онлайн без очередей</h1>
+        <div>
+          <p class="eyebrow">Страхование онлайн</p>
+          <h1>Умный полис без очередей и лишних звонков</h1>
           <p class="hero__subtitle">
-            Автострахование, недвижимость и все виды страхования в одном месте. Подберем
-            программу под вашу задачу и рассчитаем стоимость.
+            Подбор ОСАГО, КАСКО, страхования недвижимости и других видов.
+            Рассчитаем стоимость и подскажем оптимальный вариант.
           </p>
- 
+
           <div class="hero__actions">
-            <a class="btn" href="#calc">Получить расчет</a>
+            <a class="btn" href="#calc">Получить расчёт</a>
             <a class="btn btn--ghost" href="#products">Выбрать продукт</a>
           </div>
- 
+
           <ul class="hero__list">
-            <li>ОСАГО, КАСКО и расширенные опции для авто</li>
-            <li>Страхование недвижимости и ответственности</li>
-            <li>Консультации и сопровождение без выходных</li>
+            <li>Несколько вариантов от страховых компаний</li>
+            <li>Прозрачные условия до оформления</li>
+            <li>Поддержка без выходных</li>
           </ul>
- 
-          <div class="hero__stats">
-            <div class="stat-card">
-              <div class="stat-card__value">7 дней</div>
-              <div class="stat-card__label">Работаем без выходных</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-card__value">10-15 мин</div>
-              <div class="stat-card__label">Средний расчет по заявке</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-card__value">Все виды</div>
-              <div class="stat-card__label">Подбор под вашу задачу</div>
-            </div>
-          </div>
         </div>
- 
-        <div class="hero__side">
-          <div class="hero__panel" id="calc">
-            <div class="panel__header">
-              <h2>Быстрый расчет</h2>
-              <p>Оставьте данные, мы подберем оптимальный тариф.</p>
-            </div>
- 
-            <form class="calc-form" method="post" action="https://formsubmit.co/ravtek22@mail.ru">
-              <input type="hidden" name="_subject" value="Заявка на расчет — Умный Полис">
-              <input type="hidden" name="_template" value="table">
-              <label>
-                <span>Тип страхования</span>
-                <select name="type" required>
-                  <option value="" disabled selected>Выберите продукт</option>
-                  <option>ОСАГО</option>
-                  <option>КАСКО</option>
-                  <option>Имущество</option>
-                  <option>Здоровье и ДМС</option>
-                  <option>Путешествия</option>
-                  <option>Бизнес</option>
-                </select>
-              </label>
- 
-              <label>
-                <span>Регион</span>
-                <input type="text" name="region" placeholder="Москва" required />
-              </label>
- 
-              <label>
-                <span>Дата начала</span>
-                <input type="date" name="start_date" required />
-              </label>
- 
-              <label>
-                <span>Телефон</span>
-                <input type="tel" name="phone" placeholder="+7 ___ ___-__-__" required />
-              </label>
- 
-              <label class="form__full">
-                <span>Комментарий</span>
-                <textarea name="comment" rows="3" placeholder="Например: марка авто, срок, пожелания"></textarea>
-              </label>
- 
-              <button class="btn btn--block" type="submit">Получить расчет</button>
-              <p class="form__note">Заявка будет отправлена на почту ravtek22@mail.ru.</p>
-            </form>
-          </div>
- 
-          <div class="hero__illustration" aria-hidden="true">
-            <svg viewBox="0 0 420 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#3d5afe"/>
-                  <stop offset="100%" stop-color="#16c2a3"/>
-                </linearGradient>
-                <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#ffffff"/>
-                  <stop offset="100%" stop-color="#eef2ff"/>
-                </linearGradient>
-              </defs>
-              <rect x="20" y="20" width="380" height="220" rx="28" fill="url(#card)" stroke="#dce6ff"/>
-              <circle cx="330" cy="70" r="36" fill="#e0e7ff"/>
-              <circle cx="330" cy="70" r="18" fill="#d0dbff"/>
-              <rect x="60" y="70" width="140" height="86" rx="16" fill="#f5f7ff" stroke="#dce6ff"/>
-              <rect x="60" y="170" width="200" height="20" rx="10" fill="#e8eeff"/>
-              <rect x="60" y="198" width="120" height="12" rx="6" fill="#e8eeff"/>
-              <path d="M220 74 L260 88 L260 132 C260 160 238 180 220 192 C202 180 180 160 180 132 L180 88 Z" fill="url(#shield)"/>
-              <path d="M204 128 L218 142 L242 116" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="80" y="102" width="70" height="10" rx="5" fill="#d9e4ff"/>
-              <rect x="80" y="120" width="50" height="10" rx="5" fill="#d9e4ff"/>
-              <circle cx="120" cy="190" r="16" fill="#ffffff" stroke="#dce6ff"/>
-              <path d="M108 190 L118 200 L134 182" stroke="#3d5afe" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M310 168 L338 168 L352 186 L296 186 Z" fill="#f5f7ff" stroke="#dce6ff"/>
-              <rect x="318" y="150" width="20" height="18" rx="4" fill="#e8eeff" stroke="#dce6ff"/>
-            </svg>
-          </div>
+
+        <div class="hero__panel" id="calc">
+          <h2>Быстрый расчёт</h2>
+          <form class="calc-form" method="post" action="https://formsubmit.co/ravtek22@mail.ru">
+            <input type="hidden" name="_subject" value="Заявка — Умный Полис">
+            <label>
+              Тип страхования
+              <select name="type" required>
+                <option value="">Выберите</option>
+                <option>ОСАГО</option>
+                <option>КАСКО</option>
+                <option>Недвижимость</option>
+                <option>Здоровье</option>
+              </select>
+            </label>
+
+            <label>
+              Телефон
+              <input type="tel" name="phone" required placeholder="+7 ___ ___-__-__">
+            </label>
+
+            <button class="btn btn--block" type="submit">Получить расчёт</button>
+          </form>
         </div>
       </div>
     </section>
- 
+
     <section id="products" class="section">
       <div class="container">
-        <div class="section__header">
-          <div>
-            <h2>Продукты и услуги</h2>
-            <p>Автострахование, недвижимость и все виды страхования.</p>
-          </div>
-          <a class="link-arrow" href="#calc">Рассчитать онлайн</a>
-        </div>
- 
+        <h2>Продукты</h2>
         <div class="card-grid">
-          <article class="product-card">
+          <div class="product-card">
             <h3>Автострахование</h3>
-            <p>Подберем ОСАГО, КАСКО и дополнительные опции под ваш автомобиль.</p>
-            <ul>
-              <li>ОСАГО и КАСКО</li>
-              <li>Расширенные риски и опции</li>
-              <li>Сопровождение при страховом случае</li>
-            </ul>
-          </article>
- 
-          <article class="product-card">
-            <h3>Страхование недвижимости</h3>
-            <p>Защита квартиры или дома, а также ответственность перед соседями.</p>
-            <ul>
-              <li>Защита от пожара и затопления</li>
-              <li>Имущество и отделка</li>
-              <li>Ответственность перед третьими лицами</li>
-            </ul>
-          </article>
- 
-          <article class="product-card">
-            <h3>Все виды страхования</h3>
-            <p>Комплексные решения для здоровья, путешествий и бизнеса.</p>
-            <ul>
-              <li>ДМС и здоровье</li>
-              <li>Путешествия и спорт</li>
-              <li>Бизнес и ответственность</li>
-            </ul>
-          </article>
+            <p>ОСАГО и КАСКО с подбором условий.</p>
+          </div>
+          <div class="product-card">
+            <h3>Недвижимость</h3>
+            <p>Квартиры, дома, ответственность.</p>
+          </div>
+          <div class="product-card">
+            <h3>Другие виды</h3>
+            <p>Здоровье, путешествия, бизнес.</p>
+          </div>
         </div>
       </div>
     </section>
- 
-    <section id="benefits" class="section section--alt">
+
+    <section id="partners" class="section section--alt">
+      <div class="container">
+        <h2>Партнёрские страховые компании</h2>
+
+        <div class="partners-simple">
+          <img src="assets/partners/sogaz.png" alt="СОГАЗ">
+          <img src="assets/partners/ingosstrakh.png" alt="Ингосстрах">
+          <img src="assets/partners/reso.png" alt="РЕСО">
+          <img src="assets/partners/rgs.png" alt="Росгосстрах">
+          <img src="assets/partners/alfastrah.png" alt="АльфаСтрахование">
+          <img src="assets/partners/vsk.png" alt="ВСК">
+        </div>
+
+        <p class="partners-note">
+          Логотипы используются в информационных целях и принадлежат их владельцам.
+        </p>
+      </div>
+    </section>
+
+    <section id="benefits" class="section">
       <div class="container">
         <h2>Почему выбирают нас</h2>
-        <p class="section__subtitle">Сосредоточены на скорости сервиса и прозрачности условий.</p>
- 
         <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Прозрачные условия</h3>
-            <p>Показываем полную стоимость, ограничения и порядок выплат еще до оформления.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Без выходных</h3>
-            <p>На связи каждый день — консультируем и помогаем с оформлением.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Индивидуальный подбор</h3>
-            <p>Подбираем условия под ваш бюджет и реальные риски.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Партнерская сеть</h3>
-            <p>Сервисные центры и эксперты для оценки и ремонта.</p>
-          </article>
+          <div class="feature-card">Прозрачные условия</div>
+          <div class="feature-card">Быстрый расчёт</div>
+          <div class="feature-card">Поддержка при страховом случае</div>
         </div>
       </div>
     </section>
- 
-    <section class="section">
-      <div class="container">
-        <div class="section__header">
-          <div>
-            <h2>Тарифы и цены</h2>
-            <p>Стоимость зависит от объекта и набора рисков. Поможем выбрать оптимальный вариант.</p>
-          </div>
-          <span class="tag">Подбор под вашу задачу</span>
-        </div>
- 
-        <div class="plan-grid">
-          <article class="plan-card">
-            <h3>Старт</h3>
-            <p class="plan-price">расчет по запросу</p>
-            <ul>
-              <li>Базовые риски</li>
-              <li>Электронный полис</li>
-              <li>Консультация по условиям</li>
-            </ul>
-            <a class="btn btn--outline" href="#calc">Выбрать</a>
-          </article>
- 
-          <article class="plan-card plan-card--featured">
-            <div class="plan-badge">Популярный</div>
-            <h3>Оптимум</h3>
-            <p class="plan-price">расчет по запросу</p>
-            <ul>
-              <li>Расширенный набор рисков</li>
-              <li>Персональный менеджер</li>
-              <li>Приоритет в сопровождении</li>
-            </ul>
-            <a class="btn" href="#calc">Выбрать</a>
-          </article>
- 
-          <article class="plan-card">
-            <h3>Премиум</h3>
-            <p class="plan-price">расчет по запросу</p>
-            <ul>
-              <li>Максимальное покрытие</li>
-              <li>Расширенный сервис</li>
-              <li>Юридическое сопровождение</li>
-            </ul>
-            <a class="btn btn--outline" href="#calc">Выбрать</a>
-          </article>
-        </div>
-      </div>
-    </section>
- 
-    <section id="claims" class="section section--alt">
-      <div class="container">
-        <h2>Как оформить страховой случай</h2>
-        <p class="section__subtitle">
-          Мы сопровождаем вас на каждом шаге и помогаем ускорить выплату или ремонт.
-        </p>
- 
-        <ol class="steps">
-          <li>
-            <div class="step-number">1</div>
-            <div>
-              <h3>Свяжитесь с нами</h3>
-              <p>Позвоните на горячую линию или оставьте заявку через сайт.</p>
-            </div>
-          </li>
-          <li>
-            <div class="step-number">2</div>
-            <div>
-              <h3>Подготовьте документы</h3>
-              <p>Получите список документов и отправьте их в цифровом виде.</p>
-            </div>
-          </li>
-          <li>
-            <div class="step-number">3</div>
-            <div>
-              <h3>Оценка ущерба</h3>
-              <p>Эксперт проведет осмотр или онлайн-оценку.</p>
-            </div>
-          </li>
-          <li>
-            <div class="step-number">4</div>
-            <div>
-              <h3>Выплата или ремонт</h3>
-              <p>Получите выплату на счет или направление в сервис.</p>
-            </div>
-          </li>
-        </ol>
- 
-        <div class="claim-cta">
-          <div>
-            <h3>Нужна помощь прямо сейчас?</h3>
-            <p>Горячая линия работает круглосуточно, даже в выходные.</p>
-          </div>
-          <a class="btn btn--dark" href="tel:+79289000087">Позвонить +7 (928) 900-00-87</a>
-        </div>
-      </div>
-    </section>
- 
-    <section class="section">
-      <div class="container">
-        <h2>Отзывы клиентов</h2>
-        <div class="review-grid">
-          <article class="review-card">
-            <p class="review-text">
-              "ОСАГО оформила за 8 минут, сразу получила электронный полис на почту."
-            </p>
-            <p class="review-author">Ирина П., Санкт-Петербург</p>
-          </article>
-          <article class="review-card">
-            <p class="review-text">
-              "После ДТП быстро связались, помогли собрать документы и направили на ремонт."
-            </p>
-            <p class="review-author">Максим Л., Казань</p>
-          </article>
-          <article class="review-card">
-            <p class="review-text">
-              "Оформляли ДМС для компании. Менеджер сопровождал на всех этапах."
-            </p>
-            <p class="review-author">Мария Р., Москва</p>
-          </article>
-        </div>
-      </div>
-    </section>
- 
+
     <section id="faq" class="section section--alt">
       <div class="container">
-        <h2>Частые вопросы</h2>
-        <div class="faq">
-          <details>
-            <summary>Какие документы нужны для оформления ОСАГО?</summary>
-            <p>Паспорт, водительское удостоверение, СТС или ПТС, данные собственника.</p>
-          </details>
-          <details>
-            <summary>Можно ли оплатить полис частями?</summary>
-            <p>Да, доступны программы рассрочки для КАСКО и ДМС при согласовании.</p>
-          </details>
-          <details>
-            <summary>Как быстро приходит электронный полис?</summary>
-            <p>После оплаты и проверки данных — обычно в течение 5-10 минут.</p>
-          </details>
-          <details>
-            <summary>Есть ли сервисы в моем городе?</summary>
-            <p>Мы работаем в 120+ городах. Уточните адреса в службе поддержки.</p>
-          </details>
-        </div>
+        <h2>Вопросы</h2>
+        <details><summary>Как быстро оформляется полис?</summary><p>Обычно 5–15 минут.</p></details>
+        <details><summary>Работаете онлайн?</summary><p>Да, оформление возможно удалённо.</p></details>
       </div>
     </section>
- 
+
     <section id="contacts" class="section">
       <div class="container">
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h2>Контакты</h2>
-            <p class="muted">Мы на связи каждый день. Ответим на вопросы и поможем с оформлением.</p>
- 
-            <ul class="contact-list">
-              <li><strong>Телефон:</strong> <a href="tel:+79289000087">+7 (928) 900-00-87</a></li>
-              <li><strong>Email:</strong> <a href="mailto:ravtek22@mail.ru">ravtek22@mail.ru</a></li>
-              <li><strong>WhatsApp:</strong>
-                <a class="social-link" href="https://wa.me/79289000087" target="_blank" rel="noopener">
-                  <svg class="icon icon--wa" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-                    <path d="M16 3C9.4 3 4 8.1 4 14.4c0 2.5.8 4.8 2.2 6.8L4 29l7.9-2.1c1.9 1 4.1 1.6 6.4 1.6 6.6 0 12-5.1 12-11.4S22.6 3 16 3zm6.9 15.9c-.3.8-1.5 1.4-2.1 1.5-.6.1-1.3.1-2.1-.1-.5-.1-1.2-.4-2-.7-3.5-1.4-5.8-4.8-6-5-.2-.2-1.4-1.8-1.4-3.5 0-1.6.8-2.4 1.2-2.8.3-.3.8-.4 1.1-.4h.8c.3 0 .6 0 .9.6.3.7 1.1 2.6 1.2 2.8.1.2.1.5 0 .7-.1.2-.2.4-.4.6-.2.2-.4.4-.6.6-.2.2-.4.4-.2.7.1.3.6 1.2 1.3 1.9.9.9 1.6 1.2 1.9 1.3.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 2 .9 2.3 1 .3.1.5.2.6.3.1.1.1.7-.2 1.5z"/>
-                  </svg>
-                  wa.me/79289000087
-                </a>
-              </li>
-              <li><strong>Telegram:</strong>
-                <a class="social-link" href="https://t.me/raviga22" target="_blank" rel="noopener">
-                  <svg class="icon icon--tg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M9.04 15.47l-.39 5.54c.56 0 .8-.24 1.1-.52l2.64-2.52 5.48 4.01c1 .55 1.71.26 1.96-.92l3.55-16.6c.32-1.5-.54-2.09-1.51-1.72L1.13 9.37c-1.48.58-1.46 1.4-.25 1.77l5.6 1.75L18.94 5.4c.59-.39 1.12-.18.68.21L9.04 15.47z"/>
-                  </svg>
-                  t.me/raviga22
-                </a>
-              </li>
-              <li><strong>Адрес:</strong> Ростов-на-Дону</li>
-            </ul>
- 
-            <div class="office-hours">
-              <div>
-                <span>График:</span>
-                <strong>Без выходных</strong>
-              </div>
-            </div>
-          </div>
- 
-          <div class="contact-form">
-            <h3>Задать вопрос</h3>
-            <form method="post" action="https://formsubmit.co/ravtek22@mail.ru">
-              <input type="hidden" name="_subject" value="Вопрос с сайта — Умный Полис">
-              <input type="hidden" name="_template" value="table">
-              <label>
-                <span>Ваше имя</span>
-                <input type="text" name="name" placeholder="Алексей" required />
-              </label>
-              <label>
-                <span>Email</span>
-                <input type="email" name="email" placeholder="name@example.com" required />
-              </label>
-              <label>
-                <span>Сообщение</span>
-                <textarea name="message" rows="4" placeholder="Опишите ваш вопрос"></textarea>
-              </label>
-              <button class="btn btn--block" type="submit">Отправить</button>
-              <p class="form__note">Сообщение будет отправлено на ravtek22@mail.ru.</p>
-            </form>
-          </div>
-        </div>
+        <h2>Контакты</h2>
+        <p>Телефон: <a href="tel:+79289000087">+7 (928) 900-00-87</a></p>
+        <p>Email: <a href="mailto:ravtek22@mail.ru">ravtek22@mail.ru</a></p>
       </div>
     </section>
   </main>
- 
+
   <footer class="site-footer">
-    <div class="container footer__inner">
-      <p>© <span id="year"></span> Умный Полис. Все права защищены.</p>
-      <div class="footer-links">
-        <a href="#products">Продукты</a>
-        <a href="#claims">Страховой случай</a>
-        <a href="#contacts">Контакты</a>
-      </div>
+    <div class="container">
+      © <span id="year"></span> Умный Полис
     </div>
   </footer>
- 
+
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
