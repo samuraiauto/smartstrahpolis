@@ -123,21 +123,34 @@ select {
   font-weight: 700;
 }
  
-.brand__mark {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  box-shadow: 0 12px 24px rgba(61, 90, 254, 0.3);
+.brand__logo-wrap {
+  width: 52px;
+  height: 52px;
+  padding: 6px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(61, 90, 254, 0.2);
+  box-shadow: 0 12px 24px rgba(61, 90, 254, 0.2);
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
  
-.brand__mark::after {
+.brand__logo-wrap::after {
   content: "";
   position: absolute;
   inset: -4px;
-  border-radius: 14px;
-  border: 1px solid rgba(61, 90, 254, 0.25);
+  border-radius: 16px;
+  border: 1px solid rgba(61, 90, 254, 0.18);
+}
+ 
+.brand__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 8px 16px rgba(15, 23, 42, 0.2));
 }
  
 .brand__name {
@@ -246,6 +259,38 @@ select {
  
 .btn--block {
   width: 100%;
+}
+ 
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+ 
+.header__actions .social-link {
+  white-space: nowrap;
+}
+ 
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  flex: 0 0 18px;
+  fill: currentColor;
+}
+ 
+.icon--wa {
+  color: #25d366;
+  background: rgba(37, 211, 102, 0.15);
+  border-radius: 6px;
+  padding: 3px;
+}
+ 
+.icon--tg {
+  color: #2aabee;
+  background: rgba(42, 171, 238, 0.15);
+  border-radius: 6px;
+  padding: 3px;
 }
  
 .hero {
