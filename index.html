@@ -56,6 +56,21 @@
 
   <main id="top">
     <section class="hero">
+      <div class="hero__geometric">
+        <div class="geometric-shape geometric-shape--circle"></div>
+        <div class="geometric-shape geometric-shape--triangle"></div>
+        <div class="geometric-shape geometric-shape--square"></div>
+      </div>
+      <div class="hero__particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
       <div class="container hero__grid">
         <div>
           <p class="eyebrow">Страхование онлайн</p>
@@ -75,6 +90,21 @@
             <li>Прозрачные условия до оформления</li>
             <li>Поддержка без выходных</li>
           </ul>
+
+          <div class="hero__stats">
+            <div class="stat-card">
+              <div class="stat-card__value" data-target="1000">0</div>
+              <div class="stat-card__label">Довольных клиентов</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value" data-target="4.8">0</div>
+              <div class="stat-card__label">Рейтинг</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value" data-target="24">0</div>
+              <div class="stat-card__label">Часа поддержки</div>
+            </div>
+          </div>
         </div>
 
         <div class="hero__panel" id="calc">
@@ -157,26 +187,54 @@
       </div>
     </section>
 
+    <section id="steps" class="section section--alt">
+      <div class="container">
+        <h2>Как это работает</h2>
+        <div class="steps-grid">
+          <div class="step-card fade-in-up">
+            <div class="step-card__number">1</div>
+            <h3>Выберите тип страхования</h3>
+            <p>ОСАГО, КАСКО, недвижимость или другой вид. Мы поможем выбрать оптимальный вариант.</p>
+          </div>
+          <div class="step-card fade-in-up">
+            <div class="step-card__number">2</div>
+            <h3>Рассчитайте стоимость</h3>
+            <p>Заполните простую форму и получите расчет от нескольких страховых компаний за 2 минуты.</p>
+          </div>
+          <div class="step-card fade-in-up">
+            <div class="step-card__number">3</div>
+            <h3>Оформите полис онлайн</h3>
+            <p>Выберите подходящий вариант и оформите полис дистанционно. Без визитов в офис.</p>
+          </div>
+          <div class="step-card fade-in-up">
+            <div class="step-card__number">4</div>
+            <h3>Получите документы</h3>
+            <p>Полис придет на email в течение 15 минут. Все документы в электронном виде.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="benefits" class="section">
       <div class="container">
         <h2>Почему выбирают нас</h2>
         <div class="feature-grid">
-          <div class="feature-card">
+          <div class="feature-card fade-in-up">
             <div class="feature-card__icon">✨</div>
             <h3>Прозрачные условия</h3>
             <p>Показываем полную стоимость, ограничения и порядок выплат еще до оформления.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card fade-in-up">
             <div class="feature-card__icon">⚡</div>
             <h3>Быстрый расчёт</h3>
             <p>Получите расчет стоимости за 2 минуты. Сравнение предложений от ведущих страховых.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card fade-in-up">
             <div class="feature-card__icon">🛡️</div>
             <h3>Поддержка при страховом случае</h3>
             <p>Помогаем на всех этапах: от подачи заявления до получения выплаты.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card fade-in-up">
             <div class="feature-card__icon">📞</div>
             <h3>24/7 поддержка</h3>
             <p>Наша команда всегда на связи. Консультации и помощь без выходных.</p>
@@ -185,7 +243,60 @@
       </div>
     </section>
 
-    <section id="faq" class="section section--alt">
+    <section id="coverage" class="section section--alt">
+      <div class="container">
+        <h2>Зона обслуживания</h2>
+        <div class="coverage-content">
+          <div class="coverage-text fade-in-left">
+            <h3>Работаем по всей России</h3>
+            <p>Наши услуги доступны во всех регионах Российской Федерации. Независимо от того, где вы находитесь, мы поможем оформить страховой полис онлайн.</p>
+            <ul class="coverage-list">
+              <li>✓ Все регионы России</li>
+              <li>✓ Онлайн оформление</li>
+              <li>✓ Электронные полисы</li>
+              <li>✓ Поддержка 24/7</li>
+            </ul>
+          </div>
+          <div class="coverage-map fade-in-right">
+            <div class="russia-map">
+              <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                <!-- Упрощенная карта России -->
+                <path class="russia-path" d="M 50 100 L 200 80 L 350 90 L 500 100 L 650 110 L 750 120 L 750 200 L 700 300 L 650 400 L 500 450 L 350 420 L 200 380 L 100 350 L 50 250 Z" fill="url(#russiaGradient)" stroke="#1e40af" stroke-width="2"/>
+                <defs>
+                  <linearGradient id="russiaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#eff6ff;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.3" />
+                  </linearGradient>
+                  <linearGradient id="russiaGradientHover" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.5" />
+                  </linearGradient>
+                </defs>
+                <!-- Точки городов -->
+                <circle class="city-dot" cx="400" cy="200" r="8" fill="#1e40af">
+                  <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                <circle class="city-dot" cx="200" cy="150" r="6" fill="#3b82f6">
+                  <animate attributeName="r" values="6;10;6" dur="2.5s" repeatCount="indefinite"/>
+                </circle>
+                <circle class="city-dot" cx="600" cy="180" r="6" fill="#3b82f6">
+                  <animate attributeName="r" values="6;10;6" dur="2.3s" repeatCount="indefinite"/>
+                </circle>
+                <circle class="city-dot" cx="300" cy="300" r="6" fill="#3b82f6">
+                  <animate attributeName="r" values="6;10;6" dur="2.7s" repeatCount="indefinite"/>
+                </circle>
+                <circle class="city-dot" cx="500" cy="350" r="6" fill="#3b82f6">
+                  <animate attributeName="r" values="6;10;6" dur="2.4s" repeatCount="indefinite"/>
+                </circle>
+              </svg>
+            </div>
+            <p class="coverage-note">🇷🇺 Вся территория России</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
       <div class="container">
         <h2>Вопросы</h2>
         <details><summary>Как быстро оформляется полис?</summary><p>Обычно 5–15 минут.</p></details>
@@ -210,6 +321,76 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Анимация счетчиков
+    function animateCounter(element, target, duration = 2000) {
+      const start = 0;
+      const increment = target / (duration / 16);
+      let current = start;
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.textContent = target === 4.8 ? target.toFixed(1) : Math.floor(target);
+          clearInterval(timer);
+        } else {
+          if (target === 4.8) {
+            element.textContent = current.toFixed(1);
+          } else {
+            element.textContent = Math.floor(current);
+          }
+        }
+      }, 16);
+    }
+
+    // Observer для анимации счетчиков
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const valueElement = entry.target.querySelector('.stat-card__value');
+          const target = parseFloat(valueElement.getAttribute('data-target'));
+          animateCounter(valueElement, target);
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.stat-card').forEach(card => {
+      statsObserver.observe(card);
+    });
+
+    // Анимация появления элементов при скролле
+    const scrollObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          scrollObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Наблюдаем за секциями
+    document.querySelectorAll('.section').forEach(section => {
+      scrollObserver.observe(section);
+    });
+
+    // Наблюдаем за элементами с классами анимации
+    document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right, .step-card').forEach(element => {
+      scrollObserver.observe(element);
+    });
+
+    // Добавляем тонкие анимации для карточек при наведении
+    document.querySelectorAll('.product-card, .feature-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-4px) scale(1.02)';
+      });
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
   </script>
 </body>
 </html>
